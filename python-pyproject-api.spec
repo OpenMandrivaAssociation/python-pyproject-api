@@ -9,6 +9,8 @@ Group:		Development/Python
 BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
 
 %description
 API to interact with the python pyproject.toml based projects
