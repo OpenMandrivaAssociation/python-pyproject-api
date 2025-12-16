@@ -1,6 +1,6 @@
 Name:		python-pyproject-api
-Version:	1.8.0
-Release:	2
+Version:	1.10.0
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/pyproject-api/pyproject_api-%{version}.tar.gz
 Summary:	API to interact with the python pyproject.toml based projects
 URL:		https://pypi.org/project/pyproject-api/
