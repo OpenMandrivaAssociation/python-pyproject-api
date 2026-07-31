@@ -1,5 +1,5 @@
 Name:		python-pyproject-api
-Version:	1.10.0
+Version:	1.11.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/pyproject-api/pyproject_api-%{version}.tar.gz
 Summary:	API to interact with the python pyproject.toml based projects
@@ -16,7 +16,7 @@ BuildRequires:	python%{pyver}dist(hatch-vcs)
 API to interact with the python pyproject.toml based projects
 
 %prep
-%autosetup -p1 -n pyproject_api-%{version}
+%autosetup -p1 -n pyproject_api-1.11.0
 
 %files
 %{py_sitedir}/pyproject_api
