@@ -16,7 +16,7 @@ BuildRequires:	python%{pyver}dist(hatch-vcs)
 API to interact with the python pyproject.toml based projects
 
 %prep
-%autosetup -p1 -n pyproject_api-1.11.0
+%autosetup -p1 -n pyproject_api-%{version}
 
 %build -p
 # The sdist is not a git checkout, so the versioning backend needs the version.
