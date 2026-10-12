@@ -1,5 +1,5 @@
 Name:		python-pyproject-api
-Version:	1.11.0
+Version:	1.11.5
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/pyproject-api/pyproject_api-%{version}.tar.gz
 Summary:	API to interact with the python pyproject.toml based projects
@@ -17,6 +17,10 @@ API to interact with the python pyproject.toml based projects
 
 %prep
 %autosetup -p1 -n pyproject_api-1.11.0
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{py_sitedir}/pyproject_api
